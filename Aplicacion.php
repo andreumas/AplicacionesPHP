@@ -1,8 +1,0 @@
-<?php
-
-echo "Andreu Mas";
-
-
-
-
-?>
