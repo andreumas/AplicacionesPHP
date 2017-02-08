@@ -1,5 +1,4 @@
 <?php
-
 class juegotronosDB
 {
   private $conexion;
@@ -22,9 +21,19 @@ class juegotronosDB
   }
 
   public function Actores(){
-    return $this->conexion->query("SELECT  full_desc FROM cast ");
+    return $this->conexion->query("SELECT full_desc FROM cast ");
   }
 
+  public function ActoresOrdenadosPorEpisodio(){
+    return $this->conexion->query("SELECT full_desc FROM `cast` ORDER BY episodes DESC");
+  }
 
+  public function imprimirLista($campo, $resultado){
+    echo "<ol>";
+    while($fila=$resultado->fetch_assoc()){
+      echo "<li>".$fila[$campo]."</li>";
+    }
+    echo "</ol>";
+  }
 }
 ?>

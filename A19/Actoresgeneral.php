@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Juego de Tronos</title>
-    
+    <link rel="icon" type="image/png" href=icono.png" />
+
 
   </head>
   <body>
@@ -22,21 +23,19 @@
     <!---
     FIN MENU
     -->
-    <?php
+    <?php header("Content-type: text/html; charset=utf8");
     include "juegotronos.php";
 
 
     //Hacemos la Conexion
-    $conexion = new mysqli("localhost", "root", "", "gameofthrones");
-    if ($conexion->connect_errno) {
+    $conexion = new juegotronosDB();
+    if ($conexion->getErrorConexion()==true) {
       //Ha habido error
       echo "Fallo al conectar a MySQL: (" . $conexion->connect_errno . ") " . $conexion->connect_error;
     }else{
       //No ha habido error
-      //Hacemos una consulta
-        $select=" SELECT full_desc FROM `cast` ORDER BY episodes DESC" ;
-        //hacemos un echo a la consulta anterior ;
-        $resultado = $conexion->query($select);
+
+              $resultado = $conexion->Actores();
 
         echo "<th>Actores por Episodio</th>". "<br>";
         echo "</tr>";
