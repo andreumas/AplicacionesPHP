@@ -1,0 +1,157 @@
+#navegador{
+
+color:white;
+float:top;
+position:top;
+margin-top: 0px;
+height: 50px;
+ width: 90%;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #FA5858;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+}
+
+li a.active {
+    color: white;
+    background-color: red;
+}
+   
+
+
+.imgbanner{
+height:209px;
+width:100%;
+
+}
+
+#banner{
+
+    height: 200px;
+    width: 95%;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-bottom: 15px;
+
+       
+}
+
+#minebanner{
+height: 200px;
+width: 95%;
+float:right;
+}
+
+#minebanner2{
+height: 205px;
+width: 98%;
+float:center;
+}
+
+#minebanner3{
+height: 205px;
+width: 98%;
+float:left;
+}
+
+#fifabanner{
+height: 195px;
+width: 95%;
+float:right;
+}
+
+#fifabanner2{
+height: 205px;
+width: 98%;
+float:center;
+}
+
+#fifabanner3{
+height: 200px;
+width: 98%;
+float:left;
+}
+
+#publiizquierda{
+    height: 600px;
+    width: 15%;
+    background-color:red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 3px;
+    margin-left: 3px;
+    float: left;
+    
+}
+
+#contenido {
+margin:0 7px 7px 7px 7px;  width: 75%;
+    float: left; height: 300px;
+}
+
+
+#articulos1{
+
+	border-width:1px; 
+	color:white;
+    background-image: url("img/.jpg");
+
+
+}
+
+#articulos2{
+
+	
+	border-width:1px;
+  background-image: url("img/.jpg");
+}
+
+#articulos3{
+
+	
+	border-width:1px; 
+    background-image: url("img/.jpg");
+}
+
+footer {
+	height: 100px;
+	background-color: blue;
+	clear: both;
+}
+
+
+#logo2{
+	width:25px;
+	height:25px;
+position:fixed;
+}
+
+#copy{
+
+
+
+}
+
